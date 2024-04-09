@@ -28,9 +28,17 @@ function App() {
   return (
     <>
       <Navbar />
-      <HeroSection />
+      {/* <HeroSection /> */}
       <Routes>
-        <Route path="/" element={<MoviesSection movies={movies} />} />
+        <Route
+          path="/"
+          element={
+            <div>
+              <HeroSection /> <MoviesSection movies={movies} />
+            </div>
+          }
+        />
+        {/* <Route path="/" element={<MoviesSection movies={movies} />} /> */}
         <Route path="/:movieTitle" element={<Movie movies={movies} />} />
       </Routes>
       <Footer />

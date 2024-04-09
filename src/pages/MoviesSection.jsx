@@ -1,4 +1,4 @@
-import MovieCard from "./MovieCard";
+import MovieCard from "../components/MovieCard";
 import { Link } from "react-router-dom";
 
 const MoviesSection = ({ movies }) => {

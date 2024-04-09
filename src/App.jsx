@@ -1,5 +1,5 @@
-import MoviesSection from "./components/MoviesSection";
-import Movie from "./components/Movie";
+import MoviesSection from "./pages/MoviesSection";
+import Movie from "./pages/Movie";
 import fetchData from "./services/fetchData";
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";

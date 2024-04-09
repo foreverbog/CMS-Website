@@ -1,8 +1,8 @@
 import { createClient } from "contentful";
 
 const client = createClient({
-  space: "kg6iceixm3kq",
-  accessToken: "-Ru73SwkZnbE6eYaW0V2YWaxpv8grrMfAjkewVFsFfo",
+  space: import.meta.env.VITE_SPACE_ID,
+  accessToken: import.meta.env.VITE_SPACE_ACCES_TOKEN,
 });
 const fetchData = () => {
   return client.getEntries({

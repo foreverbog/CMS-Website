@@ -1,14 +1,11 @@
 import HeroSection from "./components/HeroSecton.jsx";
 
-import Footer from "./components/Footer.jsx";
-
-import Navbar from "./components/NavBar";
-
 import MoviesSection from "./pages/MoviesSection";
 import Movie from "./pages/Movie";
 import fetchData from "./services/fetchData";
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import MainLayout from "./components/MainLayout.jsx";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -23,26 +20,23 @@ function App() {
     };
     fetchMovies();
   }, []);
-  // Decode movieTitle (replace '%20' with space)
 
   return (
-    <>
-      <Navbar />
-      {/* <HeroSection /> */}
+    <main className="flex flex-col">
       <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              <HeroSection /> <MoviesSection movies={movies} />
-            </div>
-          }
-        />
-        {/* <Route path="/" element={<MoviesSection movies={movies} />} /> */}
-        <Route path="/:movieTitle" element={<Movie movies={movies} />} />
+        <Route path="/" element={<MainLayout />}>
+          <Route
+            path="/"
+            element={
+              <div>
+                <HeroSection /> <MoviesSection movies={movies} />
+              </div>
+            }
+          />
+          <Route path="/:movieTitle" element={<Movie movies={movies} />} />
+        </Route>
       </Routes>
-      <Footer />
-    </>
+    </main>
   );
 }
 

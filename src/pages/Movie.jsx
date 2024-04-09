@@ -11,7 +11,7 @@ const Movie = ({ movies }) => {
   }
 
   return (
-    <div className="grid grid-cols-2  gap-8">
+    <div className=" flex-1 grid grid-cols-2  gap-8">
       <img
         src={movie.fields.imageOfMovie[0].fields.file.url}
         alt=""

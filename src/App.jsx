@@ -1,3 +1,5 @@
+import HeroSection from "./components/HeroSecton.jsx";
+
 import Footer from "./components/Footer.jsx";
 
 import Navbar from "./components/NavBar";
@@ -26,10 +28,12 @@ function App() {
   return (
     <>
       <Navbar />
+      <HeroSection />
       <Routes>
         <Route path="/" element={<MoviesSection movies={movies} />} />
         <Route path="/:movieTitle" element={<Movie movies={movies} />} />
       </Routes>
+      <Footer />
     </>
   );
 }

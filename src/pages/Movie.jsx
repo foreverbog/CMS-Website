@@ -26,6 +26,7 @@ const Movie = ({ movies }) => {
         <p>{movie.fields.year}</p>
         <p>{movie.fields.duration}</p>
         <p>{movie.fields.category}</p>
+        <p>{movie.fields.descript}</p>
       </div>
     </div>
   );

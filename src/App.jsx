@@ -1,3 +1,5 @@
+import Navbar from "./components/NavBar";
+
 import MoviesSection from "./pages/MoviesSection";
 import Movie from "./pages/Movie";
 import fetchData from "./services/fetchData";

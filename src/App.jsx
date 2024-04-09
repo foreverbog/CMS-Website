@@ -1,3 +1,5 @@
+import Footer from "./components/Footer.jsx";
+
 import Navbar from "./components/NavBar";
 
 import MoviesSection from "./pages/MoviesSection";

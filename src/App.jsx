@@ -23,6 +23,7 @@ function App() {
 
   return (
     <>
+      <Navbar />
       <Routes>
         <Route path="/" element={<MoviesSection movies={movies} />} />
         <Route path="/:movieTitle" element={<Movie movies={movies} />} />

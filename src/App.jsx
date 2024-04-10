@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   return (
-    <main className="flex flex-col">
+    <main className="min-h-screen flex flex-col">
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route

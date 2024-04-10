@@ -1,5 +1,5 @@
 import React from "react";
-import curtainsImage from "../assets/popcorn.jpeg";
+import curtainsImage from "/images/popcorn.jpeg";
 
 const HeroSection = () => {
   return (

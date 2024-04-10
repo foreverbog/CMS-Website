@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import cinemaImage from "../assets/cinema.png";
+import cinemaImage from "/images/cinema.png";
 
 const Movie = ({ movies }) => {
   const { movieTitle } = useParams();

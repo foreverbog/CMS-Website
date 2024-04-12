@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Logo from "/images/flogo.jpeg";
 import Logo from "/images/navLogo.png";
 
 const Navbar = ({ handleLogIn, loggedIn }) => {
@@ -11,6 +12,8 @@ const Navbar = ({ handleLogIn, loggedIn }) => {
     <nav className="bg-slate-800 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/">
+          <div className="text-lg font-bold cursor-pointer ">
+            <img src={Logo} width={"60px"} />
           <div className="text-lg font-bold cursor-pointer">
             <img src={Logo} width={"80px"} />
           </div>

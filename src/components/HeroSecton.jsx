@@ -11,6 +11,12 @@ const HeroSection = ({ loggedIn }) => {
       }}
       className="flex flex-col items-center justify-center h-screen text-white "
     >
+      <h1 className="text-5xl font-bold mb-4">Welcome!</h1>
+      <h2 className="text-5xl font-bold mb-4 text-balance text-center">
+        To the Cinema Experience
+      </h2>
+      <br />
+      <button className="px-6 py-3  bg-white text-blue-500 font-bold rounded hover:bg-gray-100 transition duration-200">
       <div className="bg-black/20 text-balance text-center p-8  rounded-3xl ">
         {!loggedIn ? (
           <h1 className="text-5xl font-bold mb-4 ">Welcome!</h1>

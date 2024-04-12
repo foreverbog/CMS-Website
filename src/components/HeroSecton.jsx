@@ -13,7 +13,7 @@ const HeroSection = () => {
     >
       <h1 className="text-5xl font-bold mb-4">Welcome!</h1>
       <h2 className="text-5xl font-bold mb-4 text-balance text-center">
-        To the Cinemma Experience
+        To the Cinema Experience
       </h2>
       <br />
       <button className="px-6 py-3  bg-white text-blue-500 font-bold rounded hover:bg-gray-100 transition duration-200">

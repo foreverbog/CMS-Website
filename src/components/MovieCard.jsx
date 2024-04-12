@@ -1,6 +1,6 @@
 const MovieCard = ({ movie }) => {
   return (
-    <div className=" max-w-sm rounded overflow-hidden shadow-lg mt-20 mb-20 hover:scale-105 duration-500">
+    <div className=" max-w-sm rounded overflow-hidden shadow-lg  mb-20 hover:scale-105 duration-500">
       <img
         className="w-full h-[600px] object-cover "
         src={movie.fields.imageOfMovie[0].fields.file.url}

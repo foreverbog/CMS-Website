@@ -1,10 +1,10 @@
 import Navbar from "./NavBar";
 import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
-const MainLayout = () => {
+const MainLayout = ({ handleLogIn, loggedIn }) => {
   return (
     <>
-      <Navbar />
+      <Navbar handleLogIn={handleLogIn} loggedIn={loggedIn} />
       <Outlet />
       <Footer />
     </>

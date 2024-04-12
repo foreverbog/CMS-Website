@@ -9,6 +9,10 @@ import MainLayout from "./components/MainLayout.jsx";
 
 function App() {
   const [movies, setMovies] = useState([]);
+  const [loggedIn, setLoggedIn] = useState(false);
+  const handleLogIn = () => {
+    setLoggedIn(!loggedIn);
+  };
   useEffect(() => {
     const fetchMovies = async () => {
       try {
@@ -24,12 +28,16 @@ function App() {
   return (
     <main className="min-h-screen flex flex-col">
       <Routes>
-        <Route path="/" element={<MainLayout />}>
+        <Route
+          path="/"
+          element={<MainLayout handleLogIn={handleLogIn} loggedIn={loggedIn} />}
+        >
           <Route
             path="/"
             element={
               <div>
-                <HeroSection /> <MoviesSection movies={movies} />
+                <HeroSection handleLogIn={handleLogIn} loggedIn={loggedIn} />{" "}
+                <MoviesSection movies={movies} />
               </div>
             }
           />

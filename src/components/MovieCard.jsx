@@ -1,12 +1,12 @@
 const MovieCard = ({ movie }) => {
   return (
-    <div className=" max-w-sm rounded overflow-hidden shadow-lg mt-20 mb-20">
+    <div className=" max-w-sm rounded overflow-hidden shadow-lg  mb-20 hover:scale-105 duration-500">
       <img
-        className="w-screen h-[600px]"
+        className="w-full h-[600px] object-cover "
         src={movie.fields.imageOfMovie[0].fields.file.url}
         alt="Sunset in the mountains"
       />
-      <div className="px-6 py-4 bg-white">
+      <div className="px-6 py-4 bg-white relative  ">
         <div className="font-bold text-xl mb-2">{movie.fields.title}</div>
         <p className="text-gray-700 text-base">
           Principal Actor: {movie.fields.actors[0].fields.lastName}{" "}

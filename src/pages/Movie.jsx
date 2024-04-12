@@ -51,14 +51,14 @@ const Movie = ({ movies }) => {
             <br />
             {movie.fields.descript}
           </p>
-          <div className="flex gap-8">
-            <button className="rounded border-2 border-white bg-transparent hover:bg-blue-500 w-52 h-10 hover:border-0 text-white">
+          <div className="flex flex-col sm:flex-row gap-8">
+            <button className="rounded border-2 border-white bg-transparent hover:bg-blue-500 sm:w-52 h-10 hover:border-0 text-white">
               READY TO WATCH!
             </button>
-            <button className="rounded bg-transparent border-2 border-white hover:bg-blue-500 w-52 h-10 hover:border-0 text-white">
+            <button className="rounded bg-transparent border-2 border-white hover:bg-blue-500 sm:w-52 h-10 hover:border-0 text-white">
               ADD TO PLAYLIST
             </button>
-            <button className="rounded bg-transparent border-2 border-white hover:bg-blue-500 w-52 h-10 hover:border-0 text-white">
+            <button className="rounded bg-transparent border-2 border-white hover:bg-blue-500 sm:w-52 h-10 hover:border-0 text-white">
               MARK AS NEXT
             </button>
           </div>

@@ -17,7 +17,8 @@ function App() {
     const fetchMovies = async () => {
       try {
         const data = await fetchData();
-        setMovies(data.items);
+        setMovies(data);
+        console.log(data);
       } catch (error) {
         console.error("Could not get data", error);
       }
@@ -26,6 +27,7 @@ function App() {
   }, []);
 
   return (
+    // <div>Hello</div>
     <main className="min-h-screen flex flex-col">
       <Routes>
         <Route
@@ -41,7 +43,7 @@ function App() {
               </div>
             }
           />
-          <Route path="/:movieTitle" element={<Movie movies={movies} />} />
+          <Route path="/:movieId" element={<Movie movies={movies} />} />
         </Route>
       </Routes>
     </main>

@@ -1,8 +1,8 @@
 import HeroSection from "./components/HeroSecton.jsx";
 
-import MoviesSection from "./pages/MoviesSection";
-import Movie from "./pages/Movie";
-import fetchData from "./services/fetchData";
+import MoviesSection from "./pages/MoviesSection.jsx";
+import Movie from "./pages/Movie.jsx";
+import fetchData from "./services/fetchData.js";
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import MainLayout from "./components/MainLayout.jsx";
